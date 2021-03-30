@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
-<body class="form-page__body">
+<body class="page-body">
 <header class="page-header">
   <a class="page-header__logo">
     <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
@@ -29,7 +29,6 @@
           </a>
         </li>
         <li class="site-list__item">
-          <!--пока такие ссылки-->
           <a href="#">
             HTML Academy
           </a>
@@ -52,8 +51,29 @@
     </p>
   </section>
 
-  <section class="">
-    <p class=""
+  <section class="review">
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <div class="review__wrapper">
+
+        <fieldset class="review__general review__general--right">
+    <h3 class="review__general--title">Ваше общее впечатление</h3>
+        <p>
+          <label for="name-field-id">Имя*:</label>
+          <input id="name-field-id" type="text" name="name" placeholder="Петр">
+        </p>
+          <p>
+            <label for="fam-field-id">Фамилия*:</label>
+            <input id="fam-field-id" type="text" name="fam" placeholder="Иванов">
+          </p>
+          <p>
+            <label for="surname-field-id">Отчество*:</label>
+            <input id="surname-field-id" type="text" name="surname" placeholder="Александрович">
+          </p>
+        </fieldset>
+      </div>
+
+</form>
+    <button type="button">Отправить отзыв</button>
   </section>
 
 </main>
