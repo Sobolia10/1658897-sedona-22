@@ -55,12 +55,13 @@
     <form action="https://echo.htmlacademy.ru" method="post">
       <div class="review__wrapper">
 
-        <fieldset class="review__general review__general--right">
-    <h3 class="review__general--title">Ваше общее впечатление</h3>
-        <p>
-          <label for="name-field-id">Имя*:</label>
-          <input id="name-field-id" type="text" name="name" placeholder="Петр">
-        </p>
+        <fieldset class="review__introduce review__introduce--right">
+          <!--надо legend?-->
+          <h3 class="review__introduce-title">Представьтесь</h3>
+          <p>
+            <label for="name-field-id">Имя*:</label>
+            <input id="name-field-id" type="text" name="name" placeholder="Петр">
+          </p>
           <p>
             <label for="fam-field-id">Фамилия*:</label>
             <input id="fam-field-id" type="text" name="fam" placeholder="Иванов">
@@ -70,9 +71,32 @@
             <input id="surname-field-id" type="text" name="surname" placeholder="Александрович">
           </p>
         </fieldset>
-      </div>
 
-</form>
+        <fieldset class="review__general review__general-left">
+          <h3 class="review__general-title">Ваше общее впечатление</h3>
+          <ul class="review__general-filter">
+            <li>
+              <input type="radio" name="review__general" value="positive" id="filter-positive" checked>
+              <label for="filter-positive">Скорее положительное</label>
+            </li>
+            <li>
+              <input type="radio" name="review__general" value="negative" id="filter-negative">
+              <label for="filter-negative">Скорее отрицательное</label>
+            </li>
+            <li>
+              <input type="radio" name="review__general" value="noanswer" id="filter-noanswer">
+              <label for="filter-noanswer">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+
+
+
+
+
+
+      </div>
+    </form>
     <button type="button">Отправить отзыв</button>
   </section>
 
