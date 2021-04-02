@@ -6,12 +6,11 @@
 </head>
 <body class="page-body">
 <header class="page-header">
-  <a class="page-header__logo">
+  <a class="page-header__logo" href="index.html">
     <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
           <a href="index.html">
@@ -34,26 +33,22 @@
           </a>
         </li>
       </ul>
-    </div>
   </nav>
-  <img src="img/back-desktop.jpg" width="320" height="214" alt="Фото города Седона">
+<!--  <img src="img/back-desktop.jpg" width="320" height="214" alt="Фото города Седона">-->
 </header>
 
-<main>
+<main class="page-main">
   <h1 class="visually-hidden">Отзывы о городе Седона</h1>
-  <section class="form-slogan">
-    <h2 class="form-slogan__caption">Оставьте свой отзыв</h2>
-    <p class="form-slogan__description">
-      Помогите нашим отелям стать лучше!<br>
-      Оставьте отзыв о них, а также о<br>
-      посещенных вами<br>
-      достопримечательностях
+  <section class="preview">
+    <h2 class="preview__slogan">Оставьте свой отзыв</h2>
+    <p class="preview__intro">
+      Помогите нашим отелям стать лучше!
+      Оставьте отзыв о них, а также о посещенных вами достопримечательностях
     </p>
   </section>
-<1--все legendami?-->
+<!--все legendami?-->
   <section class="review">
     <form action="https://echo.htmlacademy.ru" method="post">
-      <div class="review__wrapper">
         <fieldset class="review__introduce review__introduce--right">
           <legend class="review__introduce-title">Представьтесь</legend>
           <p>
@@ -129,7 +124,6 @@
             <input id="text-text" type="text" name="text" placeholder="Опишите подробно все свои восторги">
           </p>
         </fieldset>
-      </div>
     </form>
     <button type="button">Отправить отзыв</button>
   </section>
@@ -137,7 +131,6 @@
 </main>
 
 <footer class="page-footer">
-  <div class="page-footer__social-wrapper">
     <div class="page-footer__social-tag">
       #VisitSedona
     </div>
@@ -164,7 +157,6 @@
         <img src="img/htmlacademy.svg" width="27" height="34" alt="Разработано HTML Academy">
       </a>
     </div>
-  </div>
 </footer>
 </body>
 </html>
