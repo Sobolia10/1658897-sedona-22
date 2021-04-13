@@ -1,0 +1,92 @@
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-footer__map {
+  display: block;
+  width: auto;
+  height: 350px;
+  margin: 0;
+  margin-bottom: 39px;
+}
+
+.page-footer__map-marker {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 155px;
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer__social-tag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 34px;
+}
+
+//Social
+
+.social__list {
+  list-style: none;
+  width: 151px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 45px;
+}
+
+.social__item {
+  width: 46px;
+  height: 48px;
+  background-color: @color-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    background-color: @color-hover-blue;
+  }
+
+  &:active {
+    background-color: @color-down-blue;
+    fill: @color-hover-white;
+  }
+
+  &:active path {
+    fill: @color-hover-white;
+  }
+}
+
+//Copyright
+
+.page-footer__copyright {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.copyright__text {
+  line-height: 26px;
+}
+
+.copyright__link a {
+  color: @color-black;
+
+  &:hover path,
+  &:focus path {
+    fill: @color-blue;
+  }
+
+  &:active path {
+    fill: @color-black-down;
+  }
+}
