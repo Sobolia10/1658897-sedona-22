@@ -1,0 +1,48 @@
+.offer {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.offer__caption {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.offer__text {
+  color: @color-hover-dark;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.offer__button {
+  background-color: @color-blue;
+  color: @color-white;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 14px 17px;
+  text-decoration: none;
+  margin-bottom: 49px;
+
+  &:hover {
+    background-color: @color-hover-blue;
+  }
+
+  &:active {
+    background-color: @color-down-blue;
+    color: @color-hover-white;
+  }
+
+  &:disabled {
+    background-color: @color-hover-light-grey;
+  }
+}
