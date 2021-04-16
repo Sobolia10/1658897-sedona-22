@@ -20,23 +20,23 @@
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a>
+          <a class="section-title">
             Главная
           </a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">
+          <a class="section-title" href="catalog.html">
             Фото и видео
           </a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">
+          <a class="section-title" href="form.html">
             Форма отзыва
           </a>
         </li>
         <li class="site-list__item">
           <!--пока такие ссылки-->
-          <a href="#">
+          <a class="section-title" href="#">
             HTML Academy
           </a>
         </li>
@@ -51,10 +51,10 @@
 </header>
 
 <main class="page-main">
-  <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
+  <h1 class="visually-hidden">Седона - город в Аризоне</h1>
   <section class="preview">
     <h2 class="visually-hidden">Особенности Седоны</h2>
-    <p class="preview__slogan">
+    <p class="preview__slogan section-title">
       Седона - небольшой городок в Аризоне, заслуживающий большего!
     </p>
     <p class="preview__intro">
@@ -64,15 +64,15 @@
 
   <section class="features">
     <h2 class="visually-hidden">Причины посещения Седоны</h2>
-    <ul class="features__list">
+    <ul class="features-list">
 
-      <li class="features__item">
-        <div class="features__item-block">
-        <img src="img/white-triangle.svg" width="768" height="37">
-        <h3 class="features__item__title">Настоящий городок</h3>
-        <p class="features__item__subtitle">— №1 —
+      <li>
+        <div class="features-item">
+        <img src="img/white-triangle.svg" width="768" height="37" alt="Оформление сайта Седоны">
+        <h3 class="features-item__title section-title">Настоящий городок</h3>
+        <p class="features-item__subtitle">— №1 —
         </p>
-        <p class="features__item__description">Седона не аттракцион для туристов, там течет своя жизнь
+        <p class="features-item__description">Седона не аттракцион для туристов, там течет своя жизнь
         </p>
         </div>
         <img src="img/photo-city.jpg" width="320" height="260" alt="Фото города Седоны">
@@ -82,17 +82,17 @@
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--digs">
               <img src="img/icon-house.svg" width="39" height="37" alt="Жилье в городе Седоне">
-              <h3 class="advantages__title">Жилье</h3>
+              <h3 class="advantages__title section-title">Жилье</h3>
               <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!
             </li>
             <li class="advantages__item advantages__item--gifts">
               <img alt="Сувениры из города Седоны" height="38" src="img/icon-gift.svg" width="32">
-              <h3 class="advantages__title">Сувениры</h3>
+              <h3 class="advantages__title section-title">Сувениры</h3>
               <p class="advantages__description">Не только китайского, но и местного производства!
             </li>
             <li class="advantages__item advantages__item--food">
               <img src="img/icon-burger.svg" width="40" height="35" alt="Еда в городе Седоне">
-              <h3 class="advantages__title">Еда</h3>
+              <h3 class="advantages__title section-title">Еда</h3>
               <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
               </p>
             </li>
@@ -100,37 +100,38 @@
         </section>
       </li>
 
-      <li class="features__item">
-        <div class="features__item-block">
-        <h3 class="features__item__title">Там есть мост дьявола</h3>
-        <p class="features__item__subtitle">— №2 —
+      <li>
+        <div class="features-item">
+        <h3 class="features-item__title section-title">Там есть мост дьявола</h3>
+        <p class="features-item__subtitle">— №2 —
         </p>
-        <p class="features__item__description">Да, по нему можно пройти! Если вы осмелитесь, конечно
+        <p class="features-item__description">Да, по нему можно пройти! Если вы осмелитесь, конечно
         </p>
           <img src="img/photo-bridge.jpg" width="320" height="260" alt="Фото моста дьявола">
         </div>
+      </li>
 
-      <li class="features__item features__item-other">
-        <h3 class="features__item__title">Небольшая площадь</h3>
-        <p class="features__item__subtitle features__item-other--number">— №3 —
+      <li class="features-item features-item-other">
+        <h3 class="features-item__title section-title">Небольшая площадь</h3>
+        <p class="features-item__subtitle features-item-other__number">— №3 —
         </p>
-        <p class="features__item__description features__item-solid">Все интересные места находятся очень близко
+        <p class="features-item__description features-item-other__solid">Все интересные места находятся очень близко
         </p>
       </li>
 
-      <li class="features__item features__item-other">
-        <h3 class="features__item__title">Красивая дорога</h3>
-        <p class="features__item__subtitle features__item-other--number">— №4 —
+      <li class="features-item features-item-other">
+        <h3 class="features-item__title section-title">Красивая дорога</h3>
+        <p class="features-item__subtitle features-item-other__number">— №4 —
         </p>
-        <p class="features__item__description features__item-solid">Ехать в Седону из Лас-Вегаса совсем не скучно!
+        <p class="features-item__description features-item-other__solid">Ехать в Седону из Лас-Вегаса совсем не скучно!
         </p>
       </li>
 
-      <li class="features__item features__item-other">
-        <h3 class="features__item__title">Мало туристов</h3>
-        <p class="features__item__subtitle features__item-other--number">— №5 —
+      <li class="features-item features-item-other">
+        <h3 class="features-item__title section-title">Мало туристов</h3>
+        <p class="features-item__subtitle features-item-other__number">— №5 —
         </p>
-        <p class="features__item__description">Большинство едет в Гранд Каньон и толпится там</p>
+        <p class="features-item__description">Большинство едет в Гранд Каньон и толпится там</p>
       </li>
     </ul>
   </section>
