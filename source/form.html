@@ -59,101 +59,104 @@
 
   <section class="review">
     <form action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="review__introduce review__introduce--right">
-        <legend class="review__introduce-title section-title">Представьтесь</legend>
+      <fieldset class="review__item review__item--introduce">
+        <legend class="review__legend section-title">Представьтесь</legend>
         <p>
-          <label for="name-field-id">Имя*:</label>
-          <input class="review-text section-title" id="name-field-id" type="text" name="name" placeholder="Петр">
+          <label class="review__label" for="name-field-id">Имя*:</label>
+          <input class="review-input section-title" id="name-field-id" type="text" name="name" placeholder="Петр">
         </p>
         <p>
-          <label for="fam-field-id">Фамилия*:</label>
+          <label class="review__label" for="fam-field-id">Фамилия*:</label>
           <input class="section-title" id="fam-field-id" type="text" name="fam" placeholder="Иванов">
         </p>
         <p>
-          <label for="surname-field-id">Отчество*:</label>
+          <label class="review__label" for="surname-field-id">Отчество*:</label>
           <input class="section-title" id="surname-field-id" type="text" name="surname" placeholder="Александрович">
         </p>
       </fieldset>
 
-      <fieldset class="review__contact">
-        <legend class="review__contact-title section-title">Контактная информация:</legend>
-        <p class="review__contact-form">
-          <label for="phone-phone">Контактный телефон*:</label>
-            <input class="section-title" id="phone-phone" type="tel" name="phone" placeholder="Введите телефон">
-            <img class="icon-form" src="img/phone.svg" width="18" height="18" alt="Контактный телефон для обратной связи">
-        </p>
-        <p class="review__contact-form">
-          <label for="email-email">Электронная почта*:</label>
-            <input class="section-title" id="email-email" type="email" name="email" placeholder="Введите e-mail">
-            <img class="icon-form" src="img/mail.svg" width="16" height="12" alt="Электронная почта для обратной связи">
-        </p>
+      <fieldset class="review__item review__item--contact">
+        <legend class="review__legend section-title">Контактная информация:</legend>
+        <label class="review__label" for="phone-phone">Контактный телефон*:</label>
+        <div class="review__item-form">
+          <input class="review__input section-title" id="phone-phone" type="tel" name="phone" placeholder="Введите телефон">
+          <span class="icon-form">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"
+              fill="#010101"/>
+          </svg>
+          </span>
+        </div>
+        <div class="review__item-form">
+          <label class="review__label" for="email-email">Электронная почта*:</label>
+          <input class="review__input section-title" id="email-email" type="email" name="email" placeholder="Введите e-mail">
+          <span class="icon-form">
+          <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"
+              fill="black"/>
+          </svg>
+          </span>
+        </div>
       </fieldset>
 
-      <fieldset class="review__general review__general-left">
-        <legend class="review__general-title section-title">Ваше общее впечатление</legend>
-        <ul class="review__general-filter">
+      <fieldset class="review__item review__item--general">
+        <legend class="review__legend section-title">Ваше общее впечатление</legend>
+        <ul>
           <li>
             <input type="radio" name="review__general" value="positive" id="filter-positive" checked>
-            <label class="section-title" for="filter-positive">Скорее положительное</label>
+            <label class="review__label section-title" for="filter-positive">Скорее положительное</label>
           </li>
           <li>
             <input type="radio" name="review__general" value="negative" id="filter-negative">
-            <label class="section-title" for="filter-negative">Скорее отрицательное</label>
+            <label class="review__label section-title" for="filter-negative">Скорее отрицательное</label>
           </li>
           <li>
             <input type="radio" name="review__general" value="noanswer" id="filter-noanswer">
-            <label class="section-title" for="filter-noanswer">Затрудняюсь ответить</label>
+            <label class="review__label section-title" for="filter-noanswer">Затрудняюсь ответить</label>
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="review__sights sights">
-        <legend class="review__sights-title sights section-title">Посещенные достопримечательности</legend>
-        <ul class="sights__list">
-          <li class="sights__item">
-            <input type="checkbox" name="bridge-devil" id="filter-bridge-devil" checked>
-            <label class="section-title" for="filter-bridge-devil">Мост дьявола</label>
+      <fieldset class="review__item review__item--sights">
+        <legend class="review__legend section-title">Посещенные достопримечательности</legend>
+        <ul>
+          <li>
+            <input class="review__input" type="checkbox" name="bridge-devil" id="filter-bridge-devil" checked>
+            <label class="review__label section-title" for="filter-bridge-devil">Мост дьявола</label>
           </li>
-          <li class="sights__item">
-            <input type="checkbox" name="mountain-ring" id="filter-mountain-ring" checked>
-            <label class="section-title" for="filter-mountain-ring">Гора-Колокол</label>
+          <li>
+            <input class="review__input" type="checkbox" name="mountain-ring" id="filter-mountain-ring" checked>
+            <label class="review__label section-title" for="filter-mountain-ring">Гора-Колокол</label>
           </li>
-          <li class="sights__item">
-            <input type="checkbox" name="slide-park" id="filter-slide-park" checked>
-            <label class="section-title" for="filter-slide-park">Слайд-парк</label>
+          <li>
+            <input class="review__input" type="checkbox" name="slide-park" id="filter-slide-park" checked>
+            <label class="review__label section-title" for="filter-slide-park">Слайд-парк</label>
           </li>
-          <li class="sights__item">
-            <input type="checkbox" name="red-mountain" id="filter-red-mountain">
-            <label class="section-title" for="filter-red-mountain">Красные скалы</label>
+          <li>
+            <input class="review__input" type="checkbox" name="red-mountain" id="filter-red-mountain">
+            <label class="review__label section-title" for="filter-red-mountain">Красные скалы</label>
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="review__emotion">
-        <legend class="review__emotion-title section-title">Опишите свои эмоции</legend>
-        <p>
-          <label for="text-text"></label>
-          <textarea class="text section-title" id="text-text" name="text"
-                    placeholder="Опишите подробно все свои восторги">
-          </textarea>
-        </p>
-      </fieldset>
+      <div class="review__item review__item--emotion">
+        <h3 class="section-title">Опишите свои эмоции</h3>
+          <textarea class="review__textarea section-title" id="text-text" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
+      </div>
+
+      <div class="review__item">
       <button class="button review__emotion-button" type="submit">Отправить отзыв</button>
+      </div>
     </form>
   </section>
 </main>
 
 <footer class="page-footer">
-  <!--вытащить карту из футера?-->
-  <div class="page-footer__map">
-    <img src="img/map-mobile.jpg" width="320" height="350" alt="город Седона на карте">
-    <img class="page-footer__map-marker" src="img/map-marker.svg" width="27" height="27" alt="Месторасположение города Седоны">
-  </div>
-
   <div class="page-footer__social-tag">
     #VisitSedona
   </div>
-
   <div class="page-footer__social social">
     <ul class="social__list">
       <li class="social__item">
