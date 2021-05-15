@@ -1,7 +1,8 @@
 .page-body {
   min-height: 100%;
-  max-width: 320px;
-  margin: 0;
+  min-width: 320px;
+  max-width: 1200px;
+  margin: auto;
   padding: 0;
   font-size: 14px;
   line-height: 21px;
@@ -9,6 +10,8 @@
   font-family: "PT Sans", "Arial", sans-serif;
   color: @color-black;
   background-color: @color-white;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
 
 .section-title {

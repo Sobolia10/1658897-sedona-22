@@ -1,38 +1,56 @@
 .intro {
-  display: block;
-  margin: 0 0 32px;
   padding: 0;
-  background: url("../img/back-mobile.jpg") no-repeat;
+  margin: 0 0 36px;
+  background-image: url("../img/back-mobile.jpg"), url("../img/text-index.svg");
+  min-height: 318px;
   background-size: cover;
-  width: auto;
-}
-
-.intro-form {
-  background: url("../img/back-desktop.jpg") no-repeat;
-  margin-bottom: 36px;
-  width: 320px;
-  height: 214px;
-}
-
-.intro__text {
-  margin-top: 90px;
-  margin-left: 20px;
-}
-
-.intro__triangle {
   position: relative;
-  top: 6px;
-  border: none;
+  width: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: @color-white;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 50% 100%, 0% 0%);
+    margin-bottom: -1px;
+  }
 }
 
-.intro__text-form {
-  position: absolute;
-  left: 25px;
-  top: 108px;
+@media (min-width: @tablet-width) {
+  .intro {
+    background: url("../img/back-desktop.jpg"), url("../text-index-tablet.svg");
+    max-width: 520px;
+    height: 518px;
+    background-size: cover;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      height: 57px;
+      bottom: -1px;
+      background-color: @color-white;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+    }
+
+    &::before {
+      width: 700px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
 
-.intro__triangle-form {
-  position: absolute;
-  top: 213px;
-  margin-bottom: 36px;
+@media (min-width: @desktop-width) {
+  .intro {
+    width: 460px;
+    height: 518px;
+    background: url("../img/back-desktop.jpg"), url("../img/text-index-tablet.svg");
+  }
 }

@@ -1,56 +1,102 @@
-.features-list {
-  margin: 0;
+.features__list {
   padding: 0;
   list-style: none;
-  margin-bottom: 57px;
+  margin: 0 0 57px;
 }
 
-.features-item {
-  background-color: @color-blue;
+.features__box {
   color: @color-white;
-  margin-bottom: 0;
+  background-color: @color-blue;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  min-width: 320px;
+  list-style: none;
 }
 
-.features-item p {
-  margin: 0 20px;
+.features__box:first-child .features__box--other {
+  padding-top: 51px;
+
+  &:nth-last-child(-n+3) {
+    background-color: @color-grey;
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  &:not(:nth-last-child(1)) {
+    border-bottom: 1px solid @color-solid-grey;
+    }
 }
 
-.features-item__title {
-  padding-top: 39px;
-  padding-bottom: 14px;
+@media (min-width: @tablet-width) {
+  .features {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+
+  .features__box {
+    display: inline-block;
+    min-width: 256px;
+    box-sizing: border-box;
+  }
+
+  .features__item {
+    &:nth-last-child(-n+3):not(:nth-last-child(1)) {
+      border-bottom: none;
+    }
+
+    &:not(:nth-last-child(-n+3)) {
+      display: flex;
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+
+    &:nth-child(3) {
+      flex-direction: row-reverse;
+    }
+  }
 }
 
-.features-item__subtitle {
-  padding-bottom: 14px;
+.features__item-title {
+  margin: 0;
+  padding: 39px 0 14px;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 20px;
+    font-size: 21px;
+  }
+}
+
+.features__item-subtitle {
   text-align: center;
+  font-size: inherit;
+  line-height: 21px;
+  margin: 10px 0 17px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 20px;
+    font-size: 21px;
+  }
 }
 
-.features-item__description {
+.features__item-description {
   padding-bottom: 35px;
   text-align: center;
-}
-
-.features-item__title,
-.features-item-other h3 {
-  text-align: center;
+  line-height: 21px;
   margin: 0;
 }
 
-.features-item-other h3 {
-  color: @color-black;
-  padding-bottom: 14px;
-}
-
-.features-item-other {
-  background-color: @color-grey;
-  color: @color-hover-dark;
-}
-
-.features-item-other__solid {
-  border-bottom: 1px solid @color-solid-grey;
-  padding-bottom: 25px;
-}
-
-.features-item__img {
+.features__item-picture {
   display: block;
+  height: 100%;
+}
+
+.features__item-pic {
+  object-fit: cover;
+  width: 100%;
 }
