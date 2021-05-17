@@ -1,12 +1,13 @@
 .preview {
   margin: 0;
-  padding: 32px 25px 32px;
+  padding: 32px 25px 11px 25px;
   position: relative;
+  text-align: center;
+  min-height: 217px;
 
   &::after {
     content: "";
     width: 320px;
-    height: 37px;
     position: absolute;
     bottom: -16px;
     left: 0;
@@ -27,7 +28,6 @@
 
 .preview__slogan {
   max-width: 260px;
-  margin: 0 0 32px 25px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -42,19 +42,24 @@
   color: @color-hover-dark;
 }
 
-//.preview-form {
-//  margin: 0;
-//  padding: 0;
-//  min-width: 320px;
-//  padding-bottom: 16px;
-//  border-bottom: 1px solid @color-hover-light-grey;
-//}
-//
-//.preview-slogan-form {
-//  margin-bottom: 29px;
-//}
-//
-//.preview-intro-form {
-//  line-height: 24px;
-//  min-width: 288px;
-//}
+.preview__triangle {
+  position: relative;
+  top: -71px;
+  left: -19px;
+}
+
+.preview-form {
+  margin: 0;
+  min-width: 320px;
+  padding: 0 0 16px;
+  border-bottom: 1px solid @color-hover-light-grey;
+}
+
+.preview-slogan-form {
+  margin-bottom: 29px;
+}
+
+.preview-intro-form {
+  line-height: 24px;
+  min-width: 288px;
+}

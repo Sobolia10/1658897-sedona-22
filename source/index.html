@@ -24,7 +24,7 @@
       </picture>
     </a>
 
-    <nav class="main-nav main-nav--opened main-nav--block">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--active">
           <a class="section-title main-nav__link" href="index.html">
@@ -50,17 +50,18 @@
       <div class="main-nav__toggle-bar">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <span class="main-nav__toggle-close"></span>
+          <!--          <span class="main-nav__toggle-close"></span>-->
         </button>
       </div>
     </nav>
-
-    <section class="intro">
-      <h1 class="visually-hidden">Седона - город в Аризоне</h1>
-    </section>
   </header>
 
   <main class="page-main">
+    <section class="intro">
+      <h1 class="visually-hidden">Седона - город в Аризоне</h1>
+      <span class="intro__triangle">
+      </span>
+    </section>
     <section class="preview">
       <h2 class="visually-hidden">Особенности Седоны</h2>
       <p class="preview__slogan section-title">
@@ -75,7 +76,13 @@
       <h2 class="visually-hidden">Причины посещения Седоны</h2>
       <ul class="features__list">
         <li class="features__item">
-          <div class="features__box features__box--other">
+          <div class="features__box">
+            <span class="preview__triangle">
+        <svg width="320" height="37" viewBox="0 0 320 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-225 0H159V37L-225 0Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M543 0H159V37L543 0Z" fill="white"/>
+</svg>
+            </span>
             <h3 class="features__item-title section-title">Настоящий городок</h3>
             <p class="features__item-subtitle">— №1 —
             </p>
@@ -122,7 +129,7 @@
           </ul>
         </li>
         <li class="features__item">
-          <div class="features__box features__box--other">
+          <div class="features__box">
             <h3 class="features__item-title section-title">Там есть мост дьявола</h3>
             <p class="features__item-subtitle">— №2 —
             </p>
@@ -147,7 +154,7 @@
           </picture>
         </li>
         <li class="features__item">
-          <div class="features__box">
+          <div class="features__box features__box--other">
             <h3 class="features__item-title section-title">Небольшая площадь</h3>
             <p class="features__item-subtitle">— №3 —
             </p>
@@ -157,7 +164,7 @@
         </li>
 
         <li class="features__item">
-          <div class="features__box">
+          <div class="features__box features__box--other">
             <h3 class="features__item-title section-title">Красивая дорога</h3>
             <p class="features__item-subtitle">— №4 —
             </p>
@@ -168,7 +175,7 @@
         </li>
 
         <li class="features__item">
-          <div class="features__box">
+          <div class="features__box features__box--other">
             <h3 class="features__item-title section-title">Мало туристов</h3>
             <p class="features__item-subtitle">— №5 —
             </p>

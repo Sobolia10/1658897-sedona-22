@@ -1,10 +1,12 @@
 .intro {
   padding: 0;
   margin: 0 0 36px;
-  background-image: url("../img/back-mobile.jpg"), url("../img/text-index.svg");
-  min-height: 318px;
-  background-size: cover;
+  background-image: url("../img/text-index.svg"), url("../img/back-mobile.jpg");
+  background-size: 282px 214px, cover;
   position: relative;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 32%, center 23%;
+  min-height: 318px;
   width: 100%;
 
   &::after {
@@ -19,17 +21,16 @@
 
 @media (min-width: @tablet-width) {
   .intro {
-    background: url("../img/back-desktop.jpg"), url("../text-index-tablet.svg");
-    max-width: 520px;
+    background: url("../img/text-index-tablet.svg"), url("../img/back-desktop.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 461px 350px, cover;
     height: 518px;
-    background-size: cover;
+    background-position: center 50%, center 50%;
 
     &::after,
     &::before {
       content: "";
       position: absolute;
-      height: 57px;
-      bottom: -1px;
       background-color: @color-white;
     }
 
@@ -37,20 +38,51 @@
       content: "";
       position: absolute;
       width: 100%;
+      clip-path: polygon(0% 100%, 100% 100%, 100% 36.85%, 50% 100%, 0% 36.85%);
     }
 
     &::before {
       width: 700px;
       left: 50%;
       transform: translateX(-50%);
+      clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 50% 100%, 0% 0%);
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .intro {
-    width: 460px;
+    //width: 100%;
     height: 518px;
-    background: url("../img/back-desktop.jpg"), url("../img/text-index-tablet.svg");
+    background: url("../img/text-index-tablet.svg"), url("../img/back-desktop.jpg");
+    background-position: center 70%, center 100%;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  &::after {
+    clip-path: polygon(0% 100%, 100% 100%, 100% -3.15%, 50% 100%, 0% -3.15%);
+  }
+}
+
+.intro__triangle {
+  background-image: url("../img/intro-triangle.svg");
+  height: 57px;
+  display: block;
+  position: relative;
+  background-repeat: no-repeat;
+  top: 262px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/intro-triangle-tablet.svg");
+    background-repeat: no-repeat;
+    top: 461px;
+    height: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/intro-triangle-desktop.svg");
+    background-repeat: no-repeat;
+    top: 462px;
+    height: 57px;
   }
 }

@@ -1,22 +1,24 @@
 .page-header {
   position: relative;
   z-index: 1;
-  min-height: 214px;
+  min-height: 56px;
 
   @media (min-width: @desktop-width) {
-    height: 518px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .page-header__logo {
   position: absolute;
   height: 84px;
+  padding: 0;
   left: 50%;
-  top: 223px;
   z-index: 5;
   transform: translateX(-50%);
 
   @media (min-width: @tablet-width) {
+    top: 0;
     width: 102px;
     height: 84px;
   }
@@ -24,6 +26,7 @@
   @media (min-width: @desktop-width) {
     width: 187px;
     height: 96px;
+    z-index: 5;
   }
 }
 
